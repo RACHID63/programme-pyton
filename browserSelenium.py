@@ -15,15 +15,15 @@ driver = webdriver.Firefox(service=service)
 driver.maximize_window()
 
 # Ouvrir une page web
-driver.get('https://sitefacile.net/')  # Remplacez par l'URL souhaitée
+driver.get('https://www.amazon.fr/dp/B0CJ9CZWYX/')  # Remplacez par l'URL souhaitée
 
 # Attendre que la page se charge
 time.sleep(5)
 
 # Trouver l'élément par ID et cliquer dessus
 # Remplacez 'id-de-l-element' par l'ID de l'élément sur lequel vous voulez cliquer
-element = driver.find_element(By.ID, 'btnGalerie')
-element_text = element.click()
+element = driver.find_element(By.ID, 'gc-live-preview-amount')
+element_text = element.text
 
 # Copier le texte dans le presse-papiers
 pyperclip.copy(element_text)

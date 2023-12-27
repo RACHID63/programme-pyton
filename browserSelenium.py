@@ -29,6 +29,8 @@ time.sleep(5)
 
 element = driver.find_element(By.CLASS_NAME, 'offer-price')
 element_text = element.get_attribute('textContent')
+element1 = driver.find_element(By.CLASS_NAME, 'offer-price')
+element_text1 = element1.get_attribute('textContent')
 
 
 print("Texte récupéré :", element_text)
